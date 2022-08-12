@@ -48,7 +48,7 @@ export default function App() {
                 localStorage.setItem("bestTime", time)
             }
         }
-    }, [tenzies])
+    }, [tenzies, rolls, time])
 
     function rollDice() {
         return Math.ceil(Math.random() * 6)
